@@ -1,4 +1,4 @@
-import java.util.Random
+import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNum {
@@ -13,7 +13,9 @@ public class GuessNum {
         System.out.println("Hello! What is your name?");
         String name = input.nextLine();
 
-        System.out.println("Well, Abaddon, I am thinking of a number between 1 and 20.\n" +
+        //input.nextLine();
+
+        System.out.println("Well, "+ name +", I am thinking of a number between 1 and 20.\n" +
                 "\n" +
                 "Take a guess.");
         int num = input.nextInt();
@@ -33,10 +35,10 @@ public class GuessNum {
                         "Take a guess.");
                 num = input.nextInt();
             }
-            count++
+            count++;
         }
         if (num == ranNum){
-            System.out.println("Good job, Abaddon! You guessed my number in " + count + " guesses!");
+            System.out.println("Good job, "+ name +"! You guessed my number in " + count + " guesses!");
         }
 
     }
